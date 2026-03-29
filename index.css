@@ -1,0 +1,51 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Playfair Display", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-et-blue: #003366;
+  --color-et-red: #ed1c24;
+  --color-et-gold: #c5a059;
+  --color-et-cream: #fdfcf0;
+  --color-et-ink: #1a1a1a;
+}
+
+@layer base {
+  :root {
+    --chart-grid: #00000010;
+    --chart-axis: #00000020;
+    --chart-tick: #00000040;
+    --chart-tooltip-bg: #fdfcf0;
+    --chart-tooltip-border: #00000020;
+    --chart-tooltip-text: #1a1a1a;
+  }
+
+  .dark {
+    --chart-grid: #ffffff10;
+    --chart-axis: #ffffff20;
+    --chart-tick: #ffffff40;
+    --chart-tooltip-bg: #1a1a1a;
+    --chart-tooltip-border: #ffffff20;
+    --chart-tooltip-text: #ffffff;
+  }
+
+  body {
+    @apply bg-et-cream text-et-ink antialiased transition-colors duration-300;
+  }
+
+  .dark body {
+    @apply bg-[#0a0a0a] text-white;
+  }
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
