@@ -1,0 +1,7 @@
+{
+  "name": "ET Navigator",
+  "description": "An AI-native business news experience featuring personalized newsrooms, interactive intelligence briefings, and story arc tracking.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
