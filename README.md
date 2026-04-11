@@ -1,69 +1,86 @@
-# ET Navigator: The Intelligent Newsroom
+# 🚀 ET Navigator: Your AI-Powered Newsroom
 
-An AI-native business news experience featuring personalized newsrooms, interactive intelligence briefings, and story arc tracking. ET Navigator synthesizes thousands of sources to deliver a specific, high-signal news edge tailored to your persona.
+**ET Navigator** is like having a personal assistant who reads the news for you. It picks out the most important stories based on who you are (like an investor or a student) and can even turn news into short videos!
 
-## 🚀 Features
+---
 
-- **Personalized Newsrooms**: Tailored news feeds for General, Investor, Startup, and Student personas.
-- **AI News Navigator**: Deep-dive into any story with an interactive, conversational interface powered by Gemini 3.1 Pro.
-- **Story Arc Tracking**: Visualize the evolution of a news narrative over time with sentiment analysis and key player identification.
-- **AI Video Studio**: Generate concise, professional broadcast reports of key news stories with kinetic typography.
-- **Demo Mode**: Explore the full application with high-quality mock data even without a live Gemini API key.
-- **Dynamic Theming**: A premium Dark Mode with color-coded sidebar accents that adapt to your active tab (Red for Feed, Blue for Navigator, Gold for Arcs).
-- **Multilingual Support**: Switch between English, Hindi, and Tamil with a single tap.
+## 📺 What can it do?
+*   **Personalized for You:** Tell the app who you are, and it shows you news you actually care about.
+*   **Chat with News:** Don't understand a complex story? Just ask the AI to explain it like you're 5.
+*   **See the Future:** Use "Story Arcs" to see where a news story is heading.
+*   **Watch the News:** Click a button to turn any article into a professional video report.
+*   **Dark Mode:** A beautiful, eye-friendly dark grey and red theme for night reading.
 
-## 🛠️ Tech Stack
+---
 
-- **Frontend**: React 19, Vite, TypeScript
-- **Styling**: Tailwind CSS 4
-- **Animations**: Motion (Framer Motion)
-- **Icons**: Lucide React
-- **AI Integration**: Google Gemini API via `@google/genai`
-- **Charts**: Recharts
+## ⚙️ Technical Requirements
 
-## 📦 Getting Started
+If you are a developer or want to use specific tools, here are the requirements:
 
-### Prerequisites
+*   **Node.js:** Version **v18.0.0** or higher (Recommended: **v20 LTS** or **v22 LTS**).
+*   **npm:** Version **v9.0.0** or higher (comes bundled with Node.js).
+*   **Version Manager (Optional):** We recommend using [**fnm**](https://github.com/Schniz/fnm) for fast and easy Node.js version switching.
+    *   To install the correct version with fnm: `fnm install --lts`
+*   **Docker (Optional):** If you prefer containers, you can run this app using Docker.
+    1.  Build the image: `docker build -t et-navigator .`
+    2.  Run the container: `docker run -p 3000:3000 et-navigator`
 
-- Node.js (v18 or higher)
-- npm or yarn
-- A Gemini API Key (get one at [ai.google.dev](https://ai.google.dev/))
+---
 
-### Installation
+## 🛠️ How to set it up (The "Easy Way")
 
-1. **Clone the repository**:
-   ```bash
-   git clone <your-repo-url>
-   cd et-navigator
-   ```
+If you've never touched code in your life, don't worry! Just follow these steps:
 
-2. **Install dependencies**:
-   ```bash
-   npm install
-   ```
+### Step 1: Install the "Engine" (Node.js)
+Think of this as the engine that makes the app run.
+1.  Go to [nodejs.org](https://nodejs.org/).
+2.  Click the big button that says **"LTS"**.
+3.  Open the file you downloaded and keep clicking **"Next"** until it's finished.
 
-3. **Set up environment variables**:
-   Create a `.env` file in the root directory and add your Gemini API key:
-   ```env
-   GEMINI_API_KEY=your_api_key_here
-   ```
+### Step 2: Get the Project Files
+1.  On this GitHub page, click the green **"Code"** button (near the top right).
+2.  Click **"Download ZIP"**.
+3.  Find the file in your "Downloads" folder, right-click it, and choose **"Extract All"** (or "Unzip"). Move that folder to your **Desktop**.
 
-4. **Start the development server**:
-   ```bash
-   npm run dev
-   ```
+### Step 3: Open the "Command Center"
+We need to tell your computer to start the app.
+*   **Windows:** Press the `Start` key, type **cmd**, and press Enter.
+*   **Mac:** Press `Command + Space`, type **Terminal**, and press Enter.
 
-5. **Open the app**:
-   Navigate to `http://localhost:3000` in your browser.
-
-## 🏗️ Build for Production
-
-To create a production-ready build:
+### Step 4: Go to the Folder
+Type this exactly and press Enter:
 ```bash
-npm run build
+cd Desktop/et-navigator-main
 ```
-The output will be in the `dist` folder.
+*(Note: If your folder has a different name, use that name instead!)*
+
+### Step 5: Install & Start
+Type these two lines, one after the other (press Enter after each):
+1.  `npm install`  *(Wait for the bars to finish moving)*
+2.  `npm run dev`
+
+### Step 6: Open the App!
+Your "Command Center" will show a link like `http://localhost:3000`. 
+**Copy and paste that into your web browser (Chrome, Safari, etc.) and you're done!**
+
+---
+
+## 💡 Frequently Asked Questions (FAQ)
+
+**"Do I need to pay for anything?"**
+No! The app works in **Demo Mode** for free using sample data.
+
+**"How do I use the real AI?"**
+If you want live news and real AI answers:
+1.  Get a free key from [ai.google.dev](https://ai.google.dev/).
+2.  Find the file `.env.example` in the folder.
+3.  Rename it to `.env`.
+4.  Open it with Notepad, paste your key after the `=`, and save.
+
+**"It's not working!"**
+Make sure you installed **Node.js** (Step 1). If you get an error, try closing the "Command Center" and starting again from Step 3.
+
+---
 
 ## 📄 License
-
-This project is licensed under the Apache-2.0 License. See the `LICENSE` file for details.
+This project is free to use under the Apache-2.0 License.
