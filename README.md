@@ -50,7 +50,7 @@ We need to tell your computer to start the app.
 ### Step 4: Go to the Folder
 Type this exactly and press Enter:
 ```bash
-cd Desktop/et-navigator-main
+cd Desktop/ET_Navigator-main
 ```
 *(Note: If your folder has a different name, use that name instead!)*
 
